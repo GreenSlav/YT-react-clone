@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 56px; /* Задайте желаемую высоту контейнера */
+  width: 169px; /* Задайте ширину контейнера */
+
+}
+
+.lines {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+}
+
+.logo {
+  width: 129px;
+  height: 56px;
+  padding: 18px 14px 18px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.lines img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.logo img {
+  display: block;
+  max-width: 90px;
+  max-height: 20px;
+}
+
+
+@media (max-width: 660px) {
+  .logo {
+    display: none;
+  }
+}

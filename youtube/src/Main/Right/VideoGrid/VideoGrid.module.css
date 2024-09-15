@@ -1,0 +1,58 @@
+.container {
+  width: calc(100vw - 104px);
+  height: calc(100vh - 112px);
+  position: fixed;
+  top: calc(56px + 56px); /* Отступ от верхнего края */
+  left: 94px; /* Отступ от левого края */
+  z-index: 1000;
+  overflow-y: auto; /* Создаем горизонтальный скролл */
+  scroll-behavior: smooth;
+}
+
+.grid {
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 30px; /* Пробел между элементами */
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.container::-webkit-scrollbar {
+  display: none; /* Скрываем скроллбар для вебкита */
+}
+
+/* Стиль для маленьких экранов */
+@media (min-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Стиль для больших экранов */
+@media (min-width: 770px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1120px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1400px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1500px) {
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

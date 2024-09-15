@@ -1,0 +1,77 @@
+.container {
+  width: 316px; /* Размер ячейки, как у видео */
+  height: 255px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.descr {
+  display: flex;
+  padding: 5px 0;
+}
+
+.channelPic {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 12px;
+  margin-top: 10px;
+}
+
+.details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: start;
+}
+
+.channel {
+  font-size: 16px;
+  color: #606060;
+  text-align: start;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #606060;
+}
+
+.views {
+  margin-right: 8px;
+}
+
+.dotSeparator {
+  margin: 0 4px;
+}
+
+.date {
+}
+
+.dots {
+  font-size: 20px;
+  color: #606060;
+  cursor: pointer;
+  margin-left: auto;
+  padding-right: 4px;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,55 @@
+.wrapper {
+  width: calc(100vw - 120px);
+  height: 56px;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  /* Для того чтобы элемент всегда был выше других элементов */
+
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto; /* Создаем горизонтальный скролл */
+  scroll-behavior: smooth; /* Плавный скролл */
+}
+
+.container::-webkit-scrollbar {
+  display: none; /* Скрываем скроллбар для вебкита */
+}
+
+.wrapper::before,
+.wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 30px; /* Ширина градиента */
+  z-index: 1; /* Чтобы градиенты были поверх контента */
+  pointer-events: none; /* Чтобы клики проходили через градиент */
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 150px; /* Ширина градиента */
+  z-index: 1; /* Чтобы градиенты были поверх контента */
+  pointer-events: none; /* Чтобы клики проходили через градиент */
+}
+
+/* Градиент слева */
+.wrapper::before {
+  left: -5px;
+  background: linear-gradient(to right, white, transparent);
+}
+
+/* Градиент справа */
+.wrapper::after {
+  right: -5px;
+  background: linear-gradient(to left, white, transparent);
+}

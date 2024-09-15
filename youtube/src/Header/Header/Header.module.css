@@ -1,0 +1,17 @@
+header {
+  position: fixed; /* Закрепляем элемент */
+  top: 0; /* Прилепляем к верхней границе */
+  left: 0; /* Прилепляем к левой границе (или можно настроить по своему усмотрению) */
+  width: 100%;
+  height: 56px; /* Занимает всю ширину окна просмотра */
+  z-index: 1000; /* Устанавливаем высокий z-index, чтобы `header` был поверх другого контента */
+  padding: 0 16px 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+/* main {
+    padding-top: 60px; 
+  } */
