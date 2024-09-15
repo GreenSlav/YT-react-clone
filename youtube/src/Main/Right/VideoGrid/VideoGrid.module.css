@@ -45,13 +45,13 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1475px) {
   .grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1850px) {
   .grid {
     grid-template-columns: repeat(5, 1fr);
   }
